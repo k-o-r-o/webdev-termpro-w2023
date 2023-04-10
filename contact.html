@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--links all the other style sheets since i split them up-->
+    <head>
+        <link rel="stylesheet" href="css/head.css">
+        <link rel="stylesheet" href="css/foot.css">
+        <link rel="stylesheet" href="css/body.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <title>Continental Cleaning Products</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/optimized.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+<header>
+    <div class ="container">
+        <!--title text 1/2 white and 1/2 blue-->
+        <a href="index.html" ><img class="logo" src="images/logo.png" alt="company logo"></a>
+        <nav>
+            <ul>
+                
+                <button class="dropbtn"><a href="index.html">Home</button></a>
+                <button class="dropbtn"><a href="specials.html">Products</button></a>
+                <button class="dropbtn"><a href="about.html">About Us</button></a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Company Info ⮟</button>
+                    <div class="dropdown-content">
+                        <a href="contact.html">warranty</a>
+                        <a href="team.html">Our Team</a>
+                        <a href="training.html">Training</a>
+                        <a href="media.html">Media</a>
+                    </div>
+                  </div>
+
+                <!--include in drop down-->
+
+
+             
+                <div class="dropdown">
+                    <button class="dropbtn">Reports ⮟</button>
+                    <div class="dropdown-content">
+                      <a href="WEB1.html">Reports #1</a>
+                      <a href="WEB2.html">Reports #2</a>
+                      <a href="WEB3.html">Reports #3</a>
+                      <a href="WEB4.html">Reports #4</a>
+                      <a href="web1-4code.html">SQL code</a>
+                    </div>
+                  </div>
+            </ul>
+        </nav>
+    </div>
+</header>
+<h1 class = "maint">Warranty and Customer Support</h1>   
+<main>
+    <h3 class ="title">Continentals Limited warranty for Canada</h3>
+    <div class = "mainp">
+    <p>Continental warrants its product to be free from defects in materials and 
+         under normal customer use as described in the Instruction Manual for 1 year 
+         from the date of purchase. This limited warranty extends only to the original 
+         purchaser and is not transferable. Continentals, at its option, will at no charge 
+         repair defective equipment during the period of this limited warranty. To obtain 
+         warranty service, the damaged equipment must be sent or taken to an authorized Continentals 
+         customer service center. This limited warranty is the customer’s exclusive remedy 
+         and applies only to new Continentals products. This limited warranty does not cover 
+         normal wear and tear, wear of the electrical cord, wear of the soleplate, or wear 
+         of the appliance's components and accessories. The user shall be liable for the 
+         dispatch and return costs under warranty repair.
+    </p>  
+    <p>
+        Damage caused by improper operation or storage, misuse or abuse, 
+        unauthorized repair by non-Continentals specialists, accident or neglect, alteration, 
+        or connecting to a power source outside the specified voltage is not covered by 
+        warranty. Equipment used for commercial or any other non-domestic or household purpose 
+        is not covered by this limited warranty. “Misuse or abuse” of the product includes the 
+        use of the equipment for any purpose, or in any manner, not in accordance with the instructions 
+        contained in the Instruction Manual provided with the equipment. Examples of “misuse or abuse”
+        of the product include, but are not limited to, damage caused by the appliance or one of its 
+        components falling to the floor, failure to rinse the water boiler, failure to remove the
+        Continentals soleplate, use of any liquid other than water, and use of non-Continentals products, 
+        accessories, and spare parts. Damage caused by any failure to follow the instructions 
+        contained in the Instruction Manual is not covered by this limited warranty.
+    </p>
+    </div>
+<ul class = "terms">
+    <li><h3>ANY IMPLIED WARRANTIES, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF MERCHANT ABILITY AND FITNESS FOR A PARTICULAR PURPOSE, SHALL BE LIMITED TO THE DURATION OF THIS LIMITED WARRANTY.</h3></li>
+    <li><h3>Continentals SHALL UNDER NO CIRCUMSTANCES BE LIABLE FOR DAMAGES IN EXCESS OF THE PURCHASE PRICE OF THE PRODUCT OR FOR ANY INCIDENTAL OR CONSEQUENTIAL DAMAGES OF ANY KIND ARISING OUT OF THE CUSTOMER’S ABILITY OR INABILITY TO USE THE PRODUCT.</h3></li>
+</ul>   
+    <h4 class = "maintitle">Submit a Warranty Request here:</h4>
+    <form>
+<div class="row">
+    <div class="column">
+    <h4 class = "title">Contact Info:</h4>
+    <ul class = "input"><!-- Start Form -->
+        <li><label for="fName">First Name:<br></label><input type="text" name="fName" id="fName"></form></li>
+        <li><form><label for="fName">Last Name:<br></label><input type="text" name="lName" id="lName"></form></li>
+        <li><form><label for="email">Email:<br></label><input type="email" name="email"  id="email"></form></li>
+    </ul>
+    <h4 class = "title">Product Info:</h4>
+    <ul class = "input">
+        <li><form><label for="phone">Product Number:<br> </label><input type="num" id="num" name="num"></form></li>
+        <li><label for="start">Order Date:<br></label><input type="date" id="start" name="order"value="yy7y/mm/dd"min="2021-01-01" max=""></li>
+    </ul>
+    
+        <h4 class = "title">Product Damages:<br></h4> 
+        <ul class = "input"> 
+          <li><input type="checkbox" name="ship" id="ship" value="ship" class="ship">Shipping Damage</li>
+          <li><input type="checkbox" name="miss" id="miss" value="miss" class="chkbx">Missing Parts</li>  
+          <li><input type="checkbox" name="broke" id="broke" value="broke" class="chkbx">Broken/Hardware Problem</li>
+          <li><input type="checkbox" name="other" id="other" value="other" class="chkbx">Other:<br>Please Explain: <br><input type="text" name="fName" id="fName"></li>
+        
+          <li><label for="questions"> Other Details You Wish to Add: <br></label>
+          <textarea style="width: 40%;" id="questions" name="questions" rows="3" cols="28"></textarea></li>
+        </ul class = "input">
+
+          <input class = "btn1" type="submit" id="submit" value ="Submit" class="btn">
+          <input class = "btn2" type="reset" id="reset" value="Reset Form" class="btn">
+
+          
+          
+        </div>
+    
+    <div class="column">
+        <h3 class = "title">Write us a Review:</h3>
+        <ul>
+            <li><label for="reference">Product:<br></label>
+        <select name="Product" id="Product">
+          <option value="ad">Steam iron</option>
+          <option value="friend">Toilet cleaner</option>  
+          <option value="google">Drain cleaner</option>
+          <option value="social">magic eraser</option>
+          <option value="other">Other</option></li>
+        </select>
+
+        <li><label for="questions">Tell Us About it: <br></label>
+          <textarea class="txtbox" id="questions" name="questions" rows="20" cols="75"></textarea>
+          
+          <div class="slidecontainer">
+            <p>Your Rating: <span id="demo"></span>/5</p>
+            <p style="font-size: 10px">Drag to change rating</p>
+            <input type="range" min="0" max="5" value="0" class="slider" id="myRange">
+            
+          </div>
+          <!-- looked this up since i thought it would be  a neat add on-->
+          <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+            
+            slider.oninput = function() {
+              output.innerHTML = this.value;
+            }
+            </script></ul>
+
+            <button class= "btn3" type="Publish">Publish</button></li>
+        
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+</main>
+
+        <!--footer starts and is split into 3 sections-->
+        <div class="footer"> 
+            <div class ="footer_main">
+                <div class="footer_section about">
+                    
+                    <h1 class = "logo"> <span>Continental</span>Cleaning </h1>
+
+                    <p>Continental Cleaning Products believes strongly in
+                        sustainable, eco friendly and non Carcinogen Products.
+                        With this goal being our number one priority among consumers,
+                        25% of proceeds are donated to saving the planet.</p>
+
+                </div>
+                <div class="footer_section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="specials.html">Products</a> </li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">warranty</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="training.html">Training</a></li>
+                        <li><a href="media.html">Media</a></li>
+                    </ul>
+                </div>
+                <div class="footer_section contact">
+                    <h2 class="title2">Contact Us</h2>
+                    <div class="contact">
+                        <img src="images/phone-icon.png" alt="phone icon" height="19.6" width="15"> 
+                        <a href="tel:5193319091">(519) 331-9091</a>
+                        <br>
+                        <img src="images/email-icon.png" alt="email icon" height="15" width="15">
+                        <a href="mailto:C&C@gmail.com">C&C@gmail.com</a>
+                    </div>
+                </div>
+                <!--this is under the footer and just shows name and company-->
+            </div> 
+            <div class="footer_bottom">
+                &copy; Copyright 2099. All Rights Reserved, Request information | Brought to life by Drake Landon &nbsp;&nbsp; | <a class ="email" href="mailto:C0870202@mylambton.ca">C0870202@mylambton.ca</a>
+            </div>
+
+        </div>
+    </body>
+
+</html>
+</html>

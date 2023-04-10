@@ -1,0 +1,109 @@
+
+.tour {
+    font-weight: bold;
+    color: #024990;
+    text-align: center;
+    
+}
+
+table.training {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 20px;
+  background-color: white;
+  font-size: 18px;
+}
+.training thead tr {
+  background-color: #bce8fe;
+  color: #002850;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.training td, 
+.training th {
+  padding: 12px 15px;
+
+}
+.training tbody tr {
+  border-bottom: 1px solid lightgray;
+}
+tr:hover {background-color: rgb(144, 203, 255);}
+
+.training tbody tr:last-of-type {
+  border-bottom: 2px solid #024990;
+}
+
+.heading {
+  text-decoration: underline;
+  color: #002850;
+  font-size: 30px;
+}
+
+.buildings {
+  background-color: #bce8fe;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-decoration: underline;
+  color: #444;
+  font-size: 20px;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  text-align: center;
+  flex: 50%;
+  margin-left: 5%;
+}
+
+.button:hover {
+  background-color: rgb(149, 2, 2);
+  color: white;
+}
+
+.toptrain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-width: 17px; 
+  border-style:solid; 
+  border-color:#ffffff;
+  padding: 1em;
+}
+
+
+tr:hover {background-color: rgb(255, 255, 255);}
+
+
+
+@media screen and (max-width: 768px) {
+  .training {
+      width: 100%;
+  }
+  tr:hover {background-color: rgb(255, 255, 255);}
+
+  .training tbody tr:nth-of-type(even){
+    background-color: gainsboro;
+  }
+  .layout {
+    visibility: hidden;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .training {
+      width: 10%;
+  }
+}

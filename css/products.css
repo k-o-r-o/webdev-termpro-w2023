@@ -1,0 +1,163 @@
+#search-term {
+  width: 99%;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#large_image {
+  width: 600px;
+  height: 700px;
+  object-fit: contain;
+  position: relative; /* Add this line */
+  z-index: 2; /* Add this line */
+}
+
+#image_list img {
+  width: 100px; 
+  height: 66px; 
+  object-fit: cover;
+}
+/* Add your existing CSS here */
+
+#next_image_preview {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  width: 300px;
+  height: 350px;
+  overflow: hidden;
+  z-index: 1; /* Add this line */
+}
+#next_image_preview img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.5;
+}
+
+#prev_image_preview {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 300px;
+  height: 350px;
+  overflow: hidden;
+  z-index: 1; /* Add this line */
+}
+#prev_image_preview img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.5;
+}
+
+.item1 {
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 6px 6px 1px #444;
+  max-width: 90%;
+  margin: 1% auto; /* Updated margin */
+  font-family: Open_Sans;
+}
+
+#carousel {
+  position: relative;
+  display: inline-block;
+}
+
+.button_panel {
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#left_button img,
+#right_button img {
+  width: 30px;
+  height: auto;
+}
+
+#display_panel {
+  display: none;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+}
+
+.item1 h1 {
+  color: #002850;
+  text-decoration: underline 1.5px black;
+}
+
+.price {
+  color: rgb(208, 0, 0);
+  font-size: 20px;
+}
+
+.price span {
+  color: #444;
+  font-size: 20px;
+}
+
+.price s {
+  color: black;
+}
+
+.item1 button {
+  border: #002850;
+  padding: 12px;
+  color: white;
+  background-color: #002850;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.item1 button:hover {
+  background-color: #013b76;
+}
+
+.description {
+  font-size: 20px;
+}
+
+table.product_table {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  align-items: center;
+  background-color: #ebf6ff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #002850;
+  border-style: solid;
+  color: #000000;
+}
+
+table.product_table td, table.product_table th {
+  border-width: 2px;
+  border-color: #002850;
+  border-style: solid;
+  padding: 3px;
+}
+
+table.product_table thead {
+  background-color: #4763fe;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  table.product_table {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

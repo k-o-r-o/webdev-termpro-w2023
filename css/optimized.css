@@ -1,0 +1,439 @@
+/* Combine head.css, foot.css, and body.css here */
+
+/* ... (previous CSS from head.css) ... */
+
+.parallax {
+    background-image: url('../images/marthaBG.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .top-left {
+    position: sticky;
+    top: 10px;
+  }
+  
+.container {
+    width: 80%;
+  
+  }
+  .logo {
+    padding-left: 19px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  
+  }
+  header {
+    background: #99DDFF;
+  }
+  
+  /* didnt show header, had to google it */
+  
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  
+  header .container h1 {
+    color: #002850;
+    text-align: left;
+  }
+  header .container h1 span {
+    color: #4763f0;
+  }
+  
+  
+  nav {
+    float: right;
+  }
+  
+  nav ul {
+    margin: 0%;
+    list-style: none;
+  }
+  
+  nav li {
+    float: left;
+    margin-left: 75px;
+    padding-top: 24px;
+  }
+  
+  nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  
+  /* Dropdown Button */
+  .dropbtn {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    background-color: #99DDFF;
+    padding: 16px;
+    border: #444;
+    border-width: 2px;
+    margin-top: 30px;
+  }
+  
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000; /* Add or update this line */
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  label.error {
+  color: red;
+  font-weight: bold;
+  /* add trasparent black background */
+  background: rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+  
+}
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #002850; color: white;}
+  a:hover {background-color: #002850; color: white;}
+  .dropbtn:hover {background-color: #002850; color: white;}
+
+  .logo:hover {
+    text-decoration: underline;
+    color: #99DDFF; /* to inherit the color from the parent element */
+  }
+  
+/* ... (previous CSS from foot.css) ... */
+
+/* main footer colour*/
+.footer {
+    background-color:#99DDFF;
+    color:  #00458B;
+    padding-bottom: 35px;
+    position: relative;
+    margin-top: -30px;
+    overflow: hidden; /* Add this line */
+  }
+  
+  .footer .footer_main {
+    display: flex;
+    flex-wrap: wrap; /* Add this line */
+  }
+  
+  /* */
+  .footer .footer_main .footer_section {
+    flex: 1;
+    padding: 20px;
+  }
+  /* this is for the titles */
+  .footer .footer_main h1,
+  .footer .footer_main h2 {
+    color:  #002850; 
+    text-align: center;
+  }
+  .footer_section.about {
+    text-align: center;
+  }  
+  /* first word on continental cleaning*/
+  .footer .footer_main .about h1 span {
+    color: #4763f0;
+  }
+  
+  .footer .footer_main .links h2 {
+    text-align: center;
+  }
+  
+  /* mid nav bar at bottom*/
+  .footer .footer_main .links ul {
+    margin: 0%;
+    list-style: none;
+  }
+  
+  /* alighs the links in the list middle of page*/
+  .footer .footer_main .links li {
+    text-align: center;
+  }
+
+  
+  
+  /* colour and formating of links*/
+  .footer .footer_main .links  a {
+    color: #00458B;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+  
+  /* turns black when hover*/
+  .footer .footer_main .links a:hover {
+    color: white;
+    
+  }
+  
+  /* right side of footer middle styling*/
+  .footer .footer_section .contact {
+    list-style: none;
+    text-align: center;
+  }
+  
+  /* bottom of footer name and brand*/
+  .footer .footer_bottom {
+    background-color: #3f58d2;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+  }
+  
+  .footer .email {
+    color: white;
+  }
+  #footer-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #3f58d2;
+  }
+  
+  #footer-toggle:hover {
+    background-color: #354fd4;
+  }
+  .hide {
+    display: none;
+  }
+  
+  .footer {
+    position: relative;
+  }
+  
+
+    
+  
+  @media screen and (max-width: 768px) {
+    .footer .footer_main .links{
+      visibility: hidden;
+    }
+  
+    .contact {
+      visibility: hidden;
+    }
+  
+  
+  }
+  
+/* ... (previous CSS from body.css) ... */
+
+/* main back around colour of the wedsite*/
+body {
+    background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+#container { 
+  width: 100%; 
+  margin-left: auto; 
+  margin-right: auto; 
+} 
+.textbg { 
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  input[type="submit"] {
+    background-color: #99DDFF;
+    padding: 5px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0066CC;
+  }
+.main_img {
+    position: relative;
+    text-align: center;
+    color: #444;
+    text-decoration: underline;
+    margin-top: 1%;
+     }
+
+     /* had to ask a friend about transfor: translae */
+    .top-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 17px; 
+    border-style:solid; 
+    border-color:#ffffff;
+    padding: 1em;
+    }
+
+    @media screen and (max-width: 600px) {
+      .top-left{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-width: 0px;
+        padding: 1em;
+        background-color: #ffffff;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+/* Add the new CSS code for the collapsible menu */
+
+/* Add styles for the nav-toggle checkbox and label */
+.nav-toggle {
+    display: none;
+  }
+  
+  .nav-toggle-label {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background-color: #99DDFF;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: '';
+    display: block;
+    background-color: #444;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    transition: all 0.3s;
+  }
+  
+  .nav-toggle-label span::before {
+    top: -8px;
+  }
+  
+  .nav-toggle-label span::after {
+    bottom: -8px;
+  }
+  
+  /* Tablet and mobile layout */
+  @media screen and (max-width: 1800px) {
+    nav {
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .nav-toggle-label {
+      display: block;
+    }
+  
+    /* Display the menu when the checkbox is checked */
+    .nav-toggle:checked ~ nav {
+      height: 100%;
+    }
+  
+    /* Change the appearance of the menu button when the checkbox is checked */
+    .nav-toggle:checked ~ .nav-toggle-label span {
+      transform: rotate(45deg);
+    }
+  
+    .nav-toggle:checked ~ .nav-toggle-label span::before {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+  
+    .nav-toggle:checked ~ .nav-toggle-label span::after {
+      transform: rotate(-45deg);
+      bottom: 0;
+    }
+    
+    .footer .footer_main .links {
+      visibility: visible;
+    }
+  
+    .contact {
+      visibility: visible;
+    }
+  }
+
+@media screen and (max-width: 1024px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+  @media screen and (max-width: 764px) {
+    .footer .footer_main {
+      flex-direction: column;
+    }
+  
+    .footer .footer_main .footer_section {
+      width: 100%;
+    }
+  
+    .footer .footer_main .about {
+      padding-right: 50%;
+    }
+    .footer .footer_main .contact {
+        padding: 20px;
+    }
+    .footer .footer_main .links {
+      display: none;
+    }
+  
+} 

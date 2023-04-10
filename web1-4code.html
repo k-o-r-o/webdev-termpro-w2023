@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--links all the other style sheets since i split them up-->
+    <head>
+        <link rel="stylesheet" href="css/head.css">
+        <link rel="stylesheet" href="css/foot.css">
+        <link rel="stylesheet" href="css/body.css">
+        <title>Continental Cleaning Products</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+<header>
+    <div class ="container">
+        <!--title text 1/2 white and 1/2 blue-->
+        <img class="logo" src="images/logo.png" alt="company logo">
+        <nav>
+            <ul>
+                
+                <button class="dropbtn"><a href="index.html">Home</button></a>
+                <button class="dropbtn"><a href="specials.html">Products</button></a>
+                <button class="dropbtn"><a href="about.html">About Us</button></a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Company Info ⮟</button>
+                    <div class="dropdown-content">
+                        <a href="contact.html">warranty</a>
+                        <a href="team.html">Our Team</a>
+                        <a href="training.html">Training</a>
+                        <a href="media.html">Media</a>
+                    </div>
+                  </div>
+
+                <!--include in drop down-->
+
+
+             
+                <div class="dropdown">
+                    <button class="dropbtn">Reports ⮟</button>
+                    <div class="dropdown-content">
+                      <a href="WEB1.html">Reports #1</a>
+                      <a href="WEB2.html">Reports #2</a>
+                      <a href="WEB3.html">Reports #3</a>
+                      <a href="WEB4.html">Reports #4</a>
+                      <a href="web1-4code.html">SQL code</a>
+                    </div>
+                  </div>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <p> 
+        CREATE OR REPLACE VIEW WEB1 AS 
+        SELECT 	PRODUCT_ID, 
+                BRAND, 
+                MODEL, 
+                CHARGE_TYPE, 
+                COLOUR, 
+                POWER_WATTAGE, 
+                WEIGHT, 
+                TEMP_SETTINGS, 
+                PRICE, 
+                SERIAL_NUM  
+        FROM PRODUCTS p; 
+        
+        CREATE OR REPLACE VIEW WEB2 AS 
+        SELECT first_name, 
+            last_name, 
+            ORDERs.ORDER_ID, 
+            order_date, 
+            brand || ' ' || model AS "Description", 
+            product_orders.product_id, 
+            quantities, 
+            price, 
+            price * quantities AS "Extended Price"
+        FROM customers
+        JOIN ORDERS
+        USING(customer_id)
+        JOIN PRODUCT_ORDERS
+        ON product_orders.order_id = orders.ORDER_ID
+        JOIN PRODUCTS
+        ON products.PRODUCT_ID = product_orders.PRODUCT_ID;
+        
+        
+        CREATE OR REPLACE VIEW WEB3 AS   
+        SELECT 
+            first_name,
+            last_name,
+            ORDERs.ORDER_ID AS "Order Total",
+            ORDERs.ORDER_ID
+        FROM customers
+        JOIN ORDERS
+        USING(customer_id);
+        
+        Select * FROM WEB3 
+        order BY first_name, last_name DESC;
+        
+        CREATE OR REPLACE VIEW WEB4 AS 
+        SELECT 
+        PRODUCT_ID,
+        MODEL, 
+        quantities * PRICE AS "product inventory value"
+        FROM PRODUCTS p 
+        JOIN PRODUCT_ORDERS
+        USING(PRODUCT_ID);
+        
+        Select * FROM WEB4 
+        order BY quantities * PRICEDESC;
+        </p>
+</main>
+           
+             <!--footer starts and is split into 3 sections-->
+             <div class="footer"> 
+                <div class ="footer_main">
+                    <div class="footer_section about">
+                        <h1 class = "logo"> <span>Continental</span>Cleaning </h1>
+
+                        <p>Continental Cleaning Products believes strongly in
+                            sustainable, eco friendly and non Carcinogen Products.
+                            With this goal being our number one priority among consumers,
+                            25% of proceeds are donated to saving the planet.</p>
+      
+                    </div>
+                    <div class="footer_section links">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a> </li>
+                            <li><a href="Products.html">Products</a></li>
+                            <li><a href="story.html">Our Story</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="Specials.html">Specials</a></li>
+                            <li><a href="contact.html">Send Us A Message</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_section contact">
+                        <h2>Contact Us</h2>
+                        <div class="contact">
+                            <img src="images/phone-icon.png" alt="phone icon" height="19.6" width="15"> 
+                            <a href="tel:5193319091">(519) 331-9091</a>
+                            <br>
+                            <img src="images/email-icon.png" alt="email icon" height="15" width="15">
+                            <a href="mailto:C&C@gmail.com">C&C@gmail.com</a>
+                        </div>
+                    </div>
+                    <!--this is under the footer and just shows name and company-->
+                </div> 
+                <div class="footer_bottom">
+                    &copy; Copyright 2099. All Rights Reserved, Request information | Brought to life by Drake Landon &nbsp;&nbsp; | <a class ="email" href="mailto:C0870202@mylambton.ca">C0870202@mylambton.ca</a>
+                </div>
+
+        </div>
+    </body>
+             <!--footer starts and is split into 3 sections-->
+             <div class="footer"> 
+                <div class ="footer_main">
+                    <div class="footer_section about">
+                        
+                        <h1 class = "logo"> <span>Continental</span>Cleaning </h1>
+    
+                        <p>Continental Cleaning Products believes strongly in
+                            sustainable, eco friendly and non Carcinogen Products.
+                            With this goal being our number one priority among consumers,
+                            25% of proceeds are donated to saving the planet.</p>
+    
+                    </div>
+                    <div class="footer_section links">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="specials.html">Products</a> </li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">warranty</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="training.html">Training</a></li>
+                            <li><a href="media.html">Media</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_section contact">
+                        <h2 class="title2">Contact Us</h2>
+                        <div class="contact">
+                            <img src="images/phone-icon.png" alt="phone icon" height="19.6" width="15"> 
+                            <a href="tel:5193319091">(519) 331-9091</a>
+                            <br>
+                            <img src="images/email-icon.png" alt="email icon" height="15" width="15">
+                            <a href="mailto:C&C@gmail.com">C&C@gmail.com</a>
+                        </div>
+                    </div>
+                    <!--this is under the footer and just shows name and company-->
+                </div> 
+                <div class="footer_bottom">
+                    &copy; Copyright 2099. All Rights Reserved, Request information | Brought to life by Drake Landon &nbsp;&nbsp; | <a class ="email" href="mailto:C0870202@mylambton.ca">C0870202@mylambton.ca</a>
+                </div>
+    
+            </div>
+        </body>
+    
+    </html>
+    </html>
+</html>

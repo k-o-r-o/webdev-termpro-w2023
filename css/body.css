@@ -1,0 +1,42 @@
+/* main back around colour of the wedsite*/
+body {
+    background-color: whitesmoke;
+    font-family: 'Open Sans';
+}
+#container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main_img {
+    position: relative;
+    text-align: center;
+    color: #444;
+    margin-top: 1%;
+     }
+
+     /* had to ask a friend about transfor: translae */
+    .top-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 17px; 
+    border-style:solid; 
+    border-color:#ffffff;
+    padding: 1em;
+    }
+
+    @media screen and (max-width: 600px) {
+      .top-left{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-width: 0px;
+        padding: 1em;
+        background-color: #ffffff;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }

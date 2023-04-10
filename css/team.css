@@ -1,0 +1,171 @@
+/* Style for the employee information */
+.employee {
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+	background-color: #f9f9f9;
+	font-size: 16px;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+.employee h3 {
+	margin-top: 0;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.employee p {
+	margin: 0;
+}
+
+/* Style for the aside element */
+.other {
+	background-color: #f2f2f2;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
+
+.other h3 {
+	margin-top: 0;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+.column {
+    float: left;
+    width: 50%;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    .row {
+        display: flex;
+      }
+      
+      .column {
+        flex: 50%;
+      }
+
+.txtteam {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    color: #002850; 
+    text-align: center;
+    font-weight: bold;
+    background-color: 
+    whitesmoke; 
+    border-radius: 25px;
+    background: whitesmoke;
+    width: 300px;
+    text-decoration: underline;
+    border-color: #002850;
+    border-style: solid;
+    }
+
+
+
+.cofound {
+    text-align: center;
+    color: #444;
+    background-color: #bce8fe;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-color: #002850;
+    border-style: solid;
+    margin-top: 3%;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  
+}
+
+.found {
+    border-color: #002850;
+    border-style: solid;
+}
+
+.mainteam { 
+    text-align: center;
+    background-color: white;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-color: #002850;
+    border-style: solid;
+    margin-top: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 10%;
+    padding-bottom: 7px;
+    margin-bottom: 3%;
+    
+}
+
+.title { 
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    text-decoration: underline;
+    background-color: #bce8fe;
+    border-radius: 10px;
+}
+
+.image {
+    border-radius: 50%;
+}
+
+.other {
+    text-align: center;
+    color: #444;
+    background-color: #ffffff;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 0px;
+    border-color: #002850;
+    border-style: solid;
+    margin-top: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 3%;
+}
+
+.listname {
+    font-size: 18px;
+    line-height: 50px;
+    
+}
+
+.image:hover {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .txtteam {
+        margin-top: 60px;
+        width: 300px; 
+        background-color: none; 
+        border-radius: none;
+        background: none;
+        border-color: none;
+        border-style: none;
+        color: #000000;
+        text-decoration: #002850 white;
+    }
+
+
+}
+

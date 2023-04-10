@@ -1,0 +1,96 @@
+
+/* main footer colour*/
+.footer {
+  background-color:#99DDFF;
+  color:  #00458B;
+  padding-bottom: 35px;
+  position: relative;
+  margin-top: -30px;
+}
+
+/* */
+.footer .footer_main {
+
+  display: flex;
+  
+}
+
+/* */
+.footer .footer_main .footer_section {
+  flex: 1;
+  padding: 20px;
+}
+/* this is for the titles */
+.footer .footer_main h1,
+.footer .footer_main h2 {
+  color:  #002850; 
+  text-align: center;
+}
+
+/* first word on continental cleaning*/
+.footer .footer_main .about h1 span {
+  color: #4763f0;
+}
+
+.footer .footer_main .links h2 {
+  text-align: center;
+}
+
+/* mid nav bar at bottom*/
+.footer .footer_main .links ul {
+  margin: 0%;
+  list-style: none;
+}
+
+/* alighs the links in the list middle of page*/
+.footer .footer_main .links li {
+  text-align: center;
+}
+
+/* colour and formating of links*/
+.footer .footer_main .links  a {
+  color: #00458B;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+/* turns black when hover*/
+.footer .footer_main .links a:hover {
+  color: black;
+}
+
+/* right side of footer middle styling*/
+.footer .footer_section .contact {
+  list-style: none;
+  text-align: center;
+}
+
+/* bottom of footer name and brand*/
+.footer .footer_bottom {
+  background-color: #3f58d2;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
+
+.footer .email {
+  color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer .footer_main .links{
+    visibility: hidden;
+  }
+
+  .contact {
+    visibility: hidden;
+  }
+
+
+}
